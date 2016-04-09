@@ -1,0 +1,51 @@
+#!/bin/sh
+
+battery_status()
+{
+    case $(uname -s) in
+        "Darwin")
+            case $1 in
+                "Discharging")
+                    ext="No";;
+                "Charging")
+                    ext="Yes";;
+            esac
+
+            ioreg -c AppleSmartBattery -w0 | \
+            grep -o '"[^"]*" = [^ ]*' | \
+            sed -e 's/= //g' -e 's/"//g' | \
+            sort | \
+            while read key value; do
+                case $key in
+                    "MaxCapacity")
+                        export maxcap=$value;;
+                    "CurrentCapacity")
+                        export curcap=$value;;
+                    "ExternalConnected")
+                        if [ -n "$ext" ] && [ "$ext" != "$value" ]; then
+                            exit
+                        fi
+                    ;;
+                    "FullyCharged")
+                        if [ "$value" = "Yes" ]; then
+                            export full=100
+                        fi
+                    ;;
+                esac
+                if [[ -n "$maxcap" && -n $curcap ]]; then
+                    if [[ -n $full ]]; then
+                        echo $full
+                    else
+                        echo $(( 100 * $curcap / $maxcap ))
+                    fi    
+                    break
+                fi
+            done
+    esac
+}
+
+BATTERY_STATUS=`battery_status $1`
+[ -z "$BATTERY_STATUS" ] && exit
+
+echo ${BATTERY_STATUS}%
+
