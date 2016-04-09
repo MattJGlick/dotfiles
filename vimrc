@@ -32,6 +32,10 @@ set softtabstop=0
 set softtabstop=4
 set tabstop=4
 
+" Make vim redrawing much faster
+set lazyredraw
+set ttyfast
+
 " current line highlighting
 set cursorline
 
