@@ -1,0 +1,23 @@
+[alias]
+    br = branch
+    cm = commit -m 
+    co = checkout
+    cot = checkout --theirs
+    st = status
+    rb = rebase
+    rbi = rebase -i
+    rbc = rebase --continue
+    pf = push --force-with-lease
+[core]
+	excludesfile = /Users/MattGlick/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Matt Glick
+	email = matt.j.glick@gmail.com
+[push]
+	default = current
