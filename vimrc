@@ -58,3 +58,6 @@ set undodir=~/.vim/undo//
 :imap jj <Esc>
 
 let g:airline_powerline_fonts = 1
+
+" Use handlebars syntax highlighting for dataviews
+au BufRead,BufNewFile *.dataview setf handlebars
