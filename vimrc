@@ -10,6 +10,8 @@ Plug 'mhinz/vim-janah'
 Plug 'myusuf3/numbers.vim'
 " nice vim status bar 
 Plug 'bling/vim-airline'
+" mustache plugin
+Plug 'mustache/vim-mustache-handlebars'
 call plug#end()
 
 "syntax processing
