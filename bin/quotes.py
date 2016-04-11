@@ -11,7 +11,7 @@ quotes = [
         "Let's have an auction! Let's do this! We'll auction off people, like it the olden days. -MS",
         "Reject a woman, and she will never let it go. One of the many defects of their kind. Also, weak arms. -DS",
         "Just pretend like we're talking until the cops leave. -CB",
-        "I want you to think about it long and hard. That's what she said. Don't. Don't you dare. -MS,DS"
+        "I want you to think about it long and hard. That's what she said. Don't. Don't you dare. -MS,DS",
         "You couldn't handle my undivided attention. -DS",
         "Fact. Bears eat beets. Bears. Beets. Battlestar Galactica. -JH",
         "You don't call retarded people retards. It's bad taste. You call your friends retards when they're acting retarded. -MS",

@@ -1,8 +1,8 @@
 [alias]
     br = branch
-    bc = branch -b
     cm = commit -m 
     co = checkout
+    cob = checkout -b
     cot = checkout --theirs
     st = status
     rb = rebase
