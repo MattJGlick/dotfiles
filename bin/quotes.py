@@ -2,7 +2,7 @@ import datetime
 import os
 from random import randint
 
-MINS_PER_QUOTE = 15
+MINS_PER_QUOTE = 10
 
 quotes = [
         "Occasionally, I'll hit somebody with my car. So sue me. -MS",
@@ -50,7 +50,8 @@ quotes = [
         "Our office has an unusually large number of unusually large people. -OM",
         "They kiss. It is super emotional, like in Toy Story. -RH",
         "I go to the bathroom for 45 minutes and everything changes. -KM",
-        "Well, Michael, I under-estimated you... Yeah, Well, maybe next time you will estimate me -JL,MS"
+        "Well, Michael, I under-estimated you... Yeah, Well, maybe next time you will estimate me -JL,MS",
+        "If I had a gun with two bullets and I was in a room with Hitler, Bin Laden, and Toby, I would shoot Toby twice. -MS"
         ]
 
 length = len(quotes)
