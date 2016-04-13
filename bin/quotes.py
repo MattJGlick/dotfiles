@@ -32,7 +32,7 @@ quotes = [
         "Every time I typed my name, it said 'Diapers'. -DS",
         "Boy have you lost your mind? 'Cause I'll help you find it! Whatcha lookin' for, ain't nobody gonna help you out there. -SH",
         "Stanley yelled at me today. That was one of the most frightening experiences of my life. -RH",
-        "I'd like a magazine. We just need urine, sir. I'd still like one. -KM,Urine Lady"
+        "I'd like a magazine. We just need urine, sir. I'd still like one. -KM,Urine Lady",
         "You can't fire me, I don't work in this van! -DS",
         "Not a lot of experience with vampires. I've hunted werewolves. I shot one once. By the time I got to it, it turned back into my neighbor's dog. -DS",
         "I am not a hero. I am a mere defender of the office. You know who's a real hero? Hiro, from Heroes. That's a hero. Also, Bono. -DS",
