@@ -47,5 +47,7 @@ battery_status()
 BATTERY_STATUS=`battery_status $1`
 [ -z "$BATTERY_STATUS" ] && exit
 
-echo ${BATTERY_STATUS}%
-
+printf "%s" "${BATTERY_STATUS}" "%"
+if (( ${BATTERY_STATUS} < 25 )); then
+    echo " - LOW"
+fi
