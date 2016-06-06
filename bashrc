@@ -20,3 +20,5 @@ alias gti=git
 
 export PROMPT_COMMAND="echo -n \[\$(date +%H:%M:%S)\]\ "
 
+export NVM_DIR="$HOME/.nvm"
+    . "$(brew --prefix nvm)/nvm.sh"

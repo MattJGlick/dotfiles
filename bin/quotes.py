@@ -52,7 +52,8 @@ quotes = [
         "I go to the bathroom for 45 minutes and everything changes. -KM",
         "Well, Michael, I under-estimated you... Yeah, Well, maybe next time you will estimate me -JL,MS",
         "If I had a gun with two bullets and I was in a room with Hitler, Bin Laden, and Toby, I would shoot Toby twice. -MS",
-        "Andy: In any cheating movie, the person getting cheated on is the hero. You're Ali Larter, I'm Beyonce. I am Beyonce always. -AB,MS"
+        "Andy: In any cheating movie, the person getting cheated on is the hero. You're Ali Larter, I'm Beyonce. I am Beyonce always. -AB,MS",
+        "Webster's Dictionary defines 'wedding' as the fusing of two metals with a hot torch. I think you guys are two metals. Gold medals. -MS"
         ]
 
 length = len(quotes)
