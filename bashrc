@@ -16,7 +16,8 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # aliases
 # because keyboards are hadr
-alias gti=git
+alias gti="git"
+alias la="ls -la"
 
 export NVM_DIR="$HOME/.nvm"
     . "$(brew --prefix nvm)/nvm.sh"
