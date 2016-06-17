@@ -7,7 +7,7 @@ Installation
 ------------
 
 ``` bash
-git clone git://github.com/michaeljsmalley/dotfiles ~/dotfiles
+git clone git://github.com/MattJGlick/dotfiles ~/dotfiles
 cd ~/dotfiles
-./makesymlinks.sh
+./make.sh
 ```
