@@ -2,6 +2,9 @@ Dotfiles
 ========
 Stores all of my custom dotfiles. Will automatically handle all of my vim directories (backups/plugins/etc). 
 
+HomeBrew
+========
+Installs all needed programs and such.
 
 Installation
 ------------
