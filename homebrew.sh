@@ -5,7 +5,7 @@ which -s brew || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebre
 
 if ! brew doctor; then
   echo "\`brew doctor\` failed. Please resolve issues before continuing."
-  #exit 1
+  exit 1
 fi
 
 brew tap homebrew/binary
@@ -14,8 +14,8 @@ formulae=(
   caskroom/cask/brew-cask
   bash-completion
   cloc
-  #docker
-  #docker-compose
+  docker
+  docker-compose
   git
   heroku
   heroku-toolbelt
