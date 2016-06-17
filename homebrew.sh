@@ -12,7 +12,6 @@ brew tap homebrew/binary
 
 formulae=(
   caskroom/cask/brew-cask
-  caskroom/versions/sublime-text3
   bash-completion
   cloc
   #docker
@@ -38,6 +37,7 @@ casks=(
   iterm2  
   skype
   slack
+  sublime-text3
   teamviewer
   vlc
 )
