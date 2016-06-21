@@ -41,6 +41,7 @@ casks=(
   slack
   #sublime-text3
   teamviewer
+  virtualbox
   vlc
 )
 
