@@ -34,6 +34,7 @@ formulae=(
 
 casks=(
   alfred
+  dropbox
   google-chrome
   iterm2  
   skype
