@@ -5,9 +5,8 @@
 ############################
 
 ######## HomeBrew Installation
-if [ -a homebrew.sh ]; then
-    ./homebrew.sh
-fi
+source homebrew.sh
+source settings
 
 ########## Variables
 files="bashrc vimrc gitconfig tmux.conf"    # list of files/folders to symlink in homedir
