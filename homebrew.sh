@@ -37,7 +37,7 @@ casks=(
   iterm2  
   skype
   slack
-  sublime-text3
+  #sublime-text3
   teamviewer
   vlc
 )
