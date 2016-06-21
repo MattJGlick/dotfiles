@@ -24,6 +24,7 @@ formulae=(
   node
   nvm
   phantomjs
+  pyenv-virtualenvwrapper
   python
   slackcat
   tmux
