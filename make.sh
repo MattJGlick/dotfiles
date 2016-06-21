@@ -4,7 +4,7 @@
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
 ############################
 
-######### HomeBrew Installation
+######## HomeBrew Installation
 if [ -a homebrew.sh ]; then
     ./homebrew.sh
 fi
@@ -29,3 +29,4 @@ for file in $files; do
 done
 
 git remote set-url origin git@github.com:MattJGlick/dotfiles.git
+source ~/.bashrc
