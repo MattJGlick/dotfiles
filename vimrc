@@ -26,6 +26,22 @@ colorscheme janah
 set spl=en spell
 set nospell
 
+" Make space my leader key
+let mapleader = "\<Space>"
+
+""" Leader Stuff
+" Open up files
+nnoremap <Leader>o :CtrlP<CR>
+" Save files
+nnoremap <Leader>w :w<CR>
+" Quit Files
+nnoremap <Leader>q :q<CR>
+" copy to clipboard
+vmap <Leader>y "+y
+" refresh source
+nmap <Leader>s :source ./vimrc<CR>
+
+
 " Soft tabs
 set expandtab
 set number
