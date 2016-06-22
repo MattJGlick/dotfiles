@@ -39,7 +39,9 @@ nnoremap <Leader>q :q<CR>
 " copy to clipboard
 vmap <Leader>y "+y
 " refresh source
-nmap <Leader>s :source ./vimrc<CR>
+nmap <Leader>s :source ~/.vimrc<CR>
+" turn off search highlight
+ nnoremap <leader>/ :nohlsearch<CR>
 
 " show command in bottom bar
 set showcmd
@@ -65,6 +67,12 @@ set showmatch
 " Ignore case on search unless search has uppercase characters
 set ignorecase
 set smartcase
+
+""" searching
+" search as characters are entered
+set incsearch
+" highlight matches
+set hlsearch
 
 " Set relative line numbers
 set number

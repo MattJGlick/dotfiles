@@ -14,7 +14,7 @@ fi
 
 # virtualenv
 export WORKON_HOME=~/virtualenvs
-export PROJECT_HOME=~/Syapse
+export PROJECT_HOME=~/syapse
 source /usr/local/bin/virtualenvwrapper.sh
 
 # aliases
