@@ -41,6 +41,8 @@ vmap <Leader>y "+y
 " refresh source
 nmap <Leader>s :source ./vimrc<CR>
 
+" show command in bottom bar
+set showcmd
 
 " Soft tabs
 set expandtab
