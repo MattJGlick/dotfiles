@@ -41,7 +41,10 @@ vmap <Leader>y "+y
 " refresh source
 nmap <Leader>s :source ~/.vimrc<CR>
 " turn off search highlight
- nnoremap <leader>/ :nohlsearch<CR>
+nnoremap <leader>/ :nohlsearch<CR>
+" toggle NERDTREE
+nnoremap <leader>n :NERDTreeToggle<CR>
+
 
 " show command in bottom bar
 set showcmd
