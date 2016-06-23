@@ -77,6 +77,9 @@ set hlsearch
 " Set relative line numbers
 set number
 
+" make a nice status bar appear all of the time
+set laststatus=2
+
 " move the swap files and such to directories inside of vim
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
