@@ -46,6 +46,8 @@ nnoremap <leader>/ :nohlsearch<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
 " jump to matching bracket/curly brace
 nnoremap <leader>v v%
+" redo an undo
+nnoremap <leader>r <C-r>
 
 " show command in bottom bar
 set showcmd
