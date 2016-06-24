@@ -26,10 +26,11 @@ colorscheme janah
 set spl=en spell
 set nospell
 
+
+""" Leader Stuff
 " Make space my leader key
 let mapleader = "\<Space>"
 
-""" Leader Stuff
 " Open up files
 nnoremap <Leader>o :CtrlP<CR>
 " Save files
