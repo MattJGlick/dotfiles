@@ -1,4 +1,6 @@
-" plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" PLUGINS
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 "NERD Tree for File Navigation
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -14,23 +16,11 @@ Plug 'bling/vim-airline'
 Plug 'mustache/vim-mustache-handlebars'
 call plug#end()
 
-"syntax processing
-syntax on
-filetype plugin indent on
-
-" color scheme
-autocmd ColorScheme janah highlight Normal ctermbg=235
-colorscheme janah
-
-" Use english for spellchecking
-set spl=en spell
-set nospell
-
-
-""" Leader Stuff
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" REMAPPING 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Make space my leader key
 let mapleader = "\<Space>"
-
 " Open up files
 nnoremap <Leader>o :CtrlP<CR>
 " Save files
@@ -50,9 +40,29 @@ nnoremap <leader>v v%
 " redo an undo
 nnoremap <leader>r <C-r>
 
+" map the ESC key to jj to prevent having to hit it constantly
+:imap jj <Esc>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" VISUALS 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " show command in bottom bar
 set showcmd
 
+" Make vim redrawing much faster
+set lazyredraw
+set ttyfast
+
+"powerline fonts
+let g:airline_powerline_fonts = 1
+
+" color scheme
+autocmd ColorScheme janah highlight Normal ctermbg=235
+colorscheme janah
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" UNSORTED 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Soft tabs
 set expandtab
 set number
@@ -60,10 +70,6 @@ set shiftwidth=4
 set softtabstop=0
 set softtabstop=4
 set tabstop=4
-
-" Make vim redrawing much faster
-set lazyredraw
-set ttyfast
 
 " current line highlighting
 set cursorline
@@ -92,10 +98,13 @@ set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
 
-" map the ESC key to jj to prevent having to hit it constantly
-:imap jj <Esc>
+"syntax processing
+syntax on
+filetype plugin indent on
 
-let g:airline_powerline_fonts = 1
+" Use english for spellchecking
+set spl=en spell
+set nospell
 
 " Use handlebars syntax highlighting for dataviews
 au BufRead,BufNewFile *.dataview setf handlebars
