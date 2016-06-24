@@ -44,7 +44,8 @@ nmap <Leader>s :source ~/.vimrc<CR>
 nnoremap <leader>/ :nohlsearch<CR>
 " toggle NERDTREE
 nnoremap <leader>n :NERDTreeToggle<CR>
-
+" jump to matching bracket/curly brace
+nnoremap <leader>v v%
 
 " show command in bottom bar
 set showcmd
