@@ -52,7 +52,7 @@ nnoremap <leader>r <C-r>
 :imap jj <Esc>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" VISUALS 
+" VISUALS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " show command in bottom bar
 set showcmd
@@ -68,8 +68,19 @@ let g:airline_powerline_fonts = 1
 autocmd ColorScheme janah highlight Normal ctermbg=235
 colorscheme janah
 
+" make a nice status bar appear all of the time
+set laststatus=2
+
+" current line highlighting
+set cursorline
+
+" highlight matching [{
+set showmatch
+
+" Set relative line numbers
+set number
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" UNSORTED 
+" FORMATTING
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Soft tabs
 set expandtab
@@ -79,40 +90,34 @@ set softtabstop=0
 set softtabstop=4
 set tabstop=4
 
-" current line highlighting
-set cursorline
-
-" highlight matching [{
-set showmatch
-
-" Ignore case on search unless search has uppercase characters
-set ignorecase
-set smartcase
-
-""" searching
-" search as characters are entered
-set incsearch
-" highlight matches
-set hlsearch
-
-" Set relative line numbers
-set number
-
-" make a nice status bar appear all of the time
-set laststatus=2
-
-" move the swap files and such to directories inside of vim
-set backupdir=~/.vim/backup//
-set directory=~/.vim/swap//
-set undodir=~/.vim/undo//
+" Use handlebars syntax highlighting for dataviews
+au BufRead,BufNewFile *.dataview setf handlebars
 
 "syntax processing
 syntax on
-filetype plugin indent on
 
 " Use english for spellchecking
 set spl=en spell
 set nospell
 
-" Use handlebars syntax highlighting for dataviews
-au BufRead,BufNewFile *.dataview setf handlebars
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" SEARCH
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Ignore case on search unless search has uppercase characters
+set ignorecase
+set smartcase
+
+" search as characters are entered
+set incsearch
+
+" highlight matches
+set hlsearch
+
+filetype plugin indent on
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" RANDOM
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" move the swap files and such to directories inside of vim
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
