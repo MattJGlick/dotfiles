@@ -17,6 +17,15 @@ Plug 'mustache/vim-mustache-handlebars'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" PLUGIN SETTINGS
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" make ctrl-p open a new tab by default
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " REMAPPING 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Make space my leader key
@@ -39,7 +48,6 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>v v%
 " redo an undo
 nnoremap <leader>r <C-r>
-
 " map the ESC key to jj to prevent having to hit it constantly
 :imap jj <Esc>
 
