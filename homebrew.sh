@@ -39,6 +39,7 @@ casks=(
   iterm2  
   skype
   slack
+  spectacle
   #sublime-text3
   teamviewer
   virtualbox
