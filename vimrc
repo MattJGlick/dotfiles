@@ -50,6 +50,10 @@ nnoremap <leader>v v%
 nnoremap <leader>r <C-r>
 " map the ESC key to jj to prevent having to hit it constantly
 :imap jj <Esc>
+" remap page up 
+nnoremap K <C-B> 
+" remap page down
+nnoremap J <C-F> 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VISUALS
