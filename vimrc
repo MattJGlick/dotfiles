@@ -54,6 +54,13 @@ nnoremap <leader>r <C-r>
 nnoremap K <C-B> 
 " remap page down
 nnoremap J <C-F> 
+"move to the beginning of the line
+nnoremap B ^
+nnoremap ^ <nop>
+"move to the end of the line
+nnoremap E $
+nnoremap $ <nop>
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VISUALS
