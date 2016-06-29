@@ -14,6 +14,8 @@ Plug 'myusuf3/numbers.vim'
 Plug 'bling/vim-airline'
 " mustache plugin
 Plug 'mustache/vim-mustache-handlebars'
+" show the indentation 
+Plug 'yggdroot/indentline'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -25,6 +27,8 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
 
+" indent color changes
+let g:indentLine_color_term = 239
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " REMAPPING 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
