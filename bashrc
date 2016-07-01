@@ -15,7 +15,6 @@ fi
 # virtualenv
 export WORKON_HOME=~/virtualenvs
 export PROJECT_HOME=~/syapse
-export COMPOSE_PROJECT_NAME=test
 source /usr/local/bin/virtualenvwrapper.sh
 
 # aliases

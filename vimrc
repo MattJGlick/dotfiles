@@ -10,11 +10,11 @@ Plug 'kien/ctrlp.vim'
 Plug 'mhinz/vim-janah'
 " relative line numbers
 Plug 'myusuf3/numbers.vim'
-" nice vim status bar 
+" nice vim status bar
 Plug 'bling/vim-airline'
 " mustache plugin
 Plug 'mustache/vim-mustache-handlebars'
-" show the indentation 
+" show the indentation
 Plug 'yggdroot/indentline'
 call plug#end()
 
@@ -30,7 +30,7 @@ let g:ctrlp_prompt_mappings = {
 " indent color changes
 let g:indentLine_color_term = 239
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" REMAPPING 
+" REMAPPING
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Make space my leader key
 let mapleader = "\<Space>"
@@ -54,17 +54,18 @@ nnoremap <leader>v v%
 nnoremap <leader>r <C-r>
 " map the ESC key to jj to prevent having to hit it constantly
 :imap jj <Esc>
-" remap page up 
-nnoremap K <C-B> 
+" remap page up
+nnoremap K <C-B>
 " remap page down
-nnoremap J <C-F> 
+nnoremap J <C-F>
 "move to the beginning of the line
 nnoremap B ^
 nnoremap ^ <nop>
 "move to the end of the line
 nnoremap E $
 nnoremap $ <nop>
-
+" trim trailing white space off the ends of lines
+nnoremap <leader>t :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VISUALS
