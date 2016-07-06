@@ -16,6 +16,8 @@ Plug 'bling/vim-airline'
 Plug 'mustache/vim-mustache-handlebars'
 " show the indentation
 Plug 'yggdroot/indentline'
+" Show the git status in the side panel
+Plug 'vim-gitgutter'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -140,3 +142,6 @@ set undodir=~/.vim/undo//
 
 " if the file is changed elsewhere, read it again
 set autoread
+
+" retain the history for longer
+set history=1000
