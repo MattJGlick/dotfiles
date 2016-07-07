@@ -68,6 +68,8 @@ nnoremap E $
 nnoremap $ <nop>
 " trim trailing white space off the ends of lines
 nnoremap <leader>t :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+" Toggle paste mode on and off
+map <leader>pp :setlocal paste!<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VISUALS
