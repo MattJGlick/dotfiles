@@ -113,6 +113,10 @@ set showmatch
 
 " Set relative line numbers
 set number
+
+" split naturally
+set splitbelow
+set splitright
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " FORMATTING
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
