@@ -51,7 +51,7 @@ nmap <Leader>s :source ~/.vimrc<CR>
 " turn off search highlight
 nnoremap <leader>/ :nohlsearch<CR>
 " toggle NERDTREE
-nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>n :call ToggleNERDTreeFind()<CR>
 " jump to matching bracket/curly brace
 nnoremap <leader>v v%
 " redo an undo
