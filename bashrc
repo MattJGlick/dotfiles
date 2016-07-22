@@ -22,5 +22,9 @@ source /usr/local/bin/virtualenvwrapper.sh
 alias gti="git"
 alias la="ls -la"
 
+# Find a file with a pattern in name:
+function ff() { find . -type f -iname '*'"$*"'*' -ls ; }
+
+# node version manager
 export NVM_DIR="$HOME/.nvm"
     . "$(brew --prefix nvm)/nvm.sh"
