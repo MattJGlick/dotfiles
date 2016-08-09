@@ -33,6 +33,10 @@ let g:ctrlp_prompt_mappings = {
 
 " indent color changes
 let g:indentLine_color_term = 239
+
+" NERDTree Ignore
+let NERDTreeIgnore = ['\.pyc$', '^__pycache__$']
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " REMAPPING
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -47,11 +51,11 @@ nnoremap <Leader>q :q<CR>
 " copy to clipboard
 vmap <Leader>y "+y
 " refresh source
-nmap <Leader>s :source ~/.vimrc<CR>
+nmap <Leader>s :source $MYVIMRC<CR>
 " turn off search highlight
 nnoremap <leader>/ :nohlsearch<CR>
 " toggle NERDTREE
-nnoremap <leader>n :call ToggleNERDTreeFind()<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>
 " jump to matching bracket/curly brace
 nnoremap <leader>v v%
 " redo an undo
@@ -83,8 +87,10 @@ noremap <leader>7 7gt
 noremap <leader>8 8gt
 noremap <leader>9 9gt
 noremap <leader>0 :tablast<cr>
-
+" turn off the tab tines
 nnoremap <leader><tab> :IndentLinesToggle<cr>
+" open up VIMRC in new window
+:nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VISUALS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
