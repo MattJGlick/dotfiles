@@ -20,6 +20,8 @@ Plug 'yggdroot/indentline'
 Plug 'vim-gitgutter'
 " Show the tab number for the files
 Plug 'mkitt/tabline.vim'
+" Git from within vim
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
