@@ -56,6 +56,8 @@ vmap <Leader>y "+y
 nmap <Leader>s :source $MYVIMRC<CR>
 " turn off search highlight
 nnoremap <leader>/ :nohlsearch<CR>
+" toggle NERDTREEFind
+nnoremap <leader>f :NERDTreeFind<CR>
 " toggle NERDTREE
 nnoremap <leader>n :NERDTreeToggle<CR>
 " jump to matching bracket/curly brace
@@ -92,7 +94,11 @@ noremap <leader>0 :tablast<cr>
 " turn off the tab tines
 nnoremap <leader><tab> :IndentLinesToggle<cr>
 " open up VIMRC in new window
-:nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+" knock current location on line, down to next line
+nnoremap <leader><Enter> i<CR><esc>
+" find and replace based on current word
+nnoremap <Leader>c :%s/\<<C-r><C-w>\>//g<Left><Left>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VISUALS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
