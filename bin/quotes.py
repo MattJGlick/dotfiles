@@ -55,7 +55,8 @@ quotes = [
         "Andy: In any cheating movie, the person getting cheated on is the hero. You're Ali Larter, I'm Beyonce. I am Beyonce always. -AB,MS",
         "Webster's Dictionary defines 'wedding' as the fusing of two metals with a hot torch. I think you guys are two metals. Gold medals. -MS",
         "If a vampire bat was in the U.S., it would make sense for it to come to a 'Sylvania,' like Pennsylvania.",
-        "saw Wedding Crashers accidentally bought a ticket for 'Grizzly Man'. figured I was in wrong theater, kept waiting. Cuz that's the thing about bear attacks they come when you least expect it -DS"
+        "saw Wedding Crashers accidentally bought a ticket for 'Grizzly Man'. figured I was in wrong theater, kept waiting. Cuz that's the thing about bear attacks they come when you least expect it -DS",
+        "I wonder if king sized sheets are called Presidential in England? huh... I really should have a tweeter account -DS"
         ]
 
 length = len(quotes)

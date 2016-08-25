@@ -99,6 +99,20 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader><Enter> i<CR><esc>
 " find and replace based on current word
 nnoremap <Leader>c :%s/\<<C-r><C-w>\>//g<Left><Left>
+" chnange all tabs to 4 spaces
+nnoremap <leader>g :%s/\t/    /g<cr>
+" surround any word with quotes
+nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+" surround any word with single quotes
+nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
+
+"""""""""""""""""""""""
+" Local Mappings
+""""""""""""""""""""""
+:let maplocalleader = "\\"
+:autocmd FileType javascript nnoremap <buffer> <localleader>m I//<esc>
+:autocmd FileType python     nnoremap <buffer> <localleader>m I#<esc>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VISUALS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -151,6 +165,11 @@ syntax on
 " Use english for spellchecking
 set spl=en spell
 set nospell
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ABBREVIATIONS 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+iabbrev retreive retrieve
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SEARCH
