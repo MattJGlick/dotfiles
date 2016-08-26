@@ -170,6 +170,7 @@ set nospell
 " ABBREVIATIONS 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 iabbrev retreive retrieve
+iabbrev teh the
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SEARCH
