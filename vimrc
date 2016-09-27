@@ -105,6 +105,8 @@ nnoremap <leader>g :%s/\t/    /g<cr>
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 " surround any word with single quotes
 nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
+nnoremap <leader>h <C-W><C-H>
+nnoremap <leader>l <C-W><C-L>
 
 """""""""""""""""""""""
 " Local Mappings
