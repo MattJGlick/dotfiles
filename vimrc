@@ -173,6 +173,8 @@ set nospell
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 iabbrev retreive retrieve
 iabbrev teh the
+iabbrev chromsome chromosome
+iabbrev Chromsome Chromosome
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SEARCH
