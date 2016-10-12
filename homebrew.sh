@@ -30,6 +30,7 @@ formulae=(
   tmux
   tree
   wget
+  fpp
 )
 
 casks=(
