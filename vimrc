@@ -110,8 +110,11 @@ nnoremap <leader>g :%s/\t/    /g<cr>
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 " surround any word with single quotes
 nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
+" move to the left and right
 nnoremap <leader>h <C-W><C-H>
 nnoremap <leader>l <C-W><C-L>
+" adding python debug
+nnoremap <leader>b aimport pdb; pdb.set_trace()<esc>
 
 """""""""""""""""""""""
 " Local Mappings
