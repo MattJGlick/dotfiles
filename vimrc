@@ -24,6 +24,8 @@ Plug 'mkitt/tabline.vim'
 Plug 'tpope/vim-fugitive'
 " autocomplete 
 Plug 'shougo/neocomplete'
+"vim abolish
+Plug 'tpope/vim-abolish'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
