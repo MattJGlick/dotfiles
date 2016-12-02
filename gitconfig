@@ -11,7 +11,7 @@
     pf = push --force-with-lease
     puhs = push
 [core]
-	excludesfile = /Users/MattGlick/.gitignore_global
+	excludesfile = /Users/glick/.config/git/ignore
 [user]
 	name = Matt Glick
 	email = mattg@syapse.com

@@ -213,3 +213,6 @@ set autoread
 
 " retain the history for longer
 set history=1000
+
+" protect against vuln
+set nomodeline
