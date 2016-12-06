@@ -26,6 +26,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'shougo/neocomplete'
 "vim abolish
 Plug 'tpope/vim-abolish'
+" quick comment out
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
