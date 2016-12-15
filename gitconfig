@@ -10,6 +10,7 @@
     rbc = rebase --continue
     pf = push --force-with-lease
     puhs = push
+    push = push --tags
 [core]
 	excludesfile = /Users/glick/.config/git/ignore
 [user]

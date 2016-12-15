@@ -118,7 +118,7 @@ nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 nnoremap <leader>h <C-W><C-H>
 nnoremap <leader>l <C-W><C-L>
 " adding python debug
-nnoremap <leader>b aimport pdb; pdb.set_trace()<esc>
+nnoremap <leader>import pdb; pdb.set_trace()<esc>
 
 """""""""""""""""""""""
 " Local Mappings
