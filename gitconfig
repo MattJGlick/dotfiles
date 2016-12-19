@@ -3,6 +3,7 @@
     cm = commit -m 
     co = checkout
     cob = checkout -b
+    cop = checkout -
     cot = checkout --theirs
     st = status
     rb = rebase
