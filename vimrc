@@ -123,9 +123,10 @@ nnoremap <leader>import pdb; pdb.set_trace()<esc>
 """""""""""""""""""""""
 " Local Mappings
 """"""""""""""""""""""
-:let maplocalleader = "\\"
-:autocmd FileType javascript nnoremap <buffer> <localleader>m I//<esc>
-:autocmd FileType python     nnoremap <buffer> <localleader>m I#<esc>
+let maplocalleader = "\\"
+autocmd FileType javascript nnoremap <buffer> <localleader>m I//<esc>
+autocmd FileType python     nnoremap <buffer> <localleader>m I#<esc>
+autocmd FileType markdown setlocal spell
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VISUALS
