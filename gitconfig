@@ -19,3 +19,5 @@
 	email = mattg@syapse.com
 [push]
 	default = current
+[pull]
+	rebase = true
