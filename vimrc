@@ -17,7 +17,7 @@ Plug 'mustache/vim-mustache-handlebars'
 " show the indentation
 Plug 'yggdroot/indentline'
 " Show the git status in the side panel
-Plug 'vim-gitgutter'
+"Plug 'vim-gitgutter'
 " Show the tab number for the files
 Plug 'mkitt/tabline.vim'
 " Git from within vim
@@ -28,6 +28,8 @@ Plug 'shougo/neocomplete'
 Plug 'tpope/vim-abolish'
 " quick comment out
 Plug 'tpope/vim-commentary'
+" pep8
+Plug 'vim-flake8'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -47,6 +49,9 @@ let NERDTreeIgnore = ['\.pyc$', '^__pycache__$']
 
 " autocomplete on default
 let g:neocomplete#enable_at_startup = 1
+
+" pep8 check
+autocmd FileType python map <buffer> <leader>x :call Flake8()<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " REMAPPING
@@ -117,8 +122,10 @@ nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 " move to the left and right
 nnoremap <leader>h <C-W><C-H>
 nnoremap <leader>l <C-W><C-L>
+nnoremap <leader>j <C-W><C-J>
+nnoremap <leader>k <C-W><C-K>
 " adding python debug
-nnoremap <leader>import pdb; pdb.set_trace()<esc>
+nnoremap <leader>b oimport pdb; pdb.set_trace()<esc>
 
 """""""""""""""""""""""
 " Local Mappings
