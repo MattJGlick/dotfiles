@@ -14,6 +14,7 @@ formulae=(
   caskroom/cask/brew-cask
   bash-completion
   cloc
+  coreutils
   docker
   docker-compose
   git
