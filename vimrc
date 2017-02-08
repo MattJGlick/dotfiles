@@ -17,7 +17,7 @@ Plug 'mustache/vim-mustache-handlebars'
 " show the indentation
 Plug 'yggdroot/indentline'
 " Show the git status in the side panel
-"Plug 'vim-gitgutter'
+Plug 'vim-gitgutter'
 " Show the tab number for the files
 Plug 'mkitt/tabline.vim'
 " Git from within vim
@@ -49,9 +49,6 @@ let NERDTreeIgnore = ['\.pyc$', '^__pycache__$']
 
 " autocomplete on default
 let g:neocomplete#enable_at_startup = 1
-
-" pep8 check
-autocmd FileType python map <buffer> <leader>x :call Flake8()<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " REMAPPING
@@ -125,7 +122,7 @@ nnoremap <leader>l <C-W><C-L>
 nnoremap <leader>j <C-W><C-J>
 nnoremap <leader>k <C-W><C-K>
 " adding python debug
-nnoremap <leader>b oimport pdb; pdb.set_trace()<esc>
+nnoremap <leader>b oimport pdb; pdb.set_trace()  # noqa<esc>
 
 """""""""""""""""""""""
 " Local Mappings
@@ -167,6 +164,10 @@ set number
 " split naturally
 set splitbelow
 set splitright
+
+" set column color
+set colorcolumn=100
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " FORMATTING
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -187,6 +188,9 @@ syntax on
 " Use english for spellchecking
 set spl=en spell
 set nospell
+
+" run linter on write
+autocmd BufWritePost *.py call Flake8()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ABBREVIATIONS 
