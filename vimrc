@@ -131,6 +131,7 @@ let maplocalleader = "\\"
 autocmd FileType javascript nnoremap <buffer> <localleader>m I//<esc>
 autocmd FileType python     nnoremap <buffer> <localleader>m I#<esc>
 autocmd FileType markdown setlocal spell
+autocmd FileType text setlocal spell
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VISUALS
