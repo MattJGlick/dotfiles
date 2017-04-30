@@ -23,7 +23,7 @@ Plug 'mkitt/tabline.vim'
 " Git from within vim
 Plug 'tpope/vim-fugitive'
 " autocomplete 
-Plug 'shougo/neocomplete'
+Plug 'dhalter/jedi-vim'
 "vim abolish
 Plug 'tpope/vim-abolish'
 " quick comment out
@@ -46,9 +46,6 @@ let g:indentLine_color_term = 239
 
 " NERDTree Ignore
 let NERDTreeIgnore = ['\.pyc$', '^__pycache__$']
-
-" autocomplete on default
-let g:neocomplete#enable_at_startup = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " REMAPPING
@@ -198,6 +195,7 @@ autocmd BufWritePost *.py call Flake8()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 iabbrev retreive retrieve
 iabbrev teh the
+iabbrev nad and
 iabbrev chromsome chromosome
 iabbrev Chromsome Chromosome
 

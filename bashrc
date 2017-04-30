@@ -21,10 +21,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 # because keyboards are hadr
 alias gti="git"
 alias la="ls -la"
+alias burp="brew update && brew upgrade"
 
 # Find a file with a pattern in name:
 function ff() { find . -type f -iname '*'"$*"'*' -ls ; }
-
-# node version manager
-export NVM_DIR="$HOME/.nvm"
-    . "$(brew --prefix nvm)/nvm.sh"

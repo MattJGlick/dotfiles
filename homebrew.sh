@@ -17,6 +17,7 @@ formulae=(
   coreutils
   docker
   docker-compose
+  dos2unix
   git
   heroku
   heroku-toolbelt
