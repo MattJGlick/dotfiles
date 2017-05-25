@@ -11,13 +11,15 @@ fi
 brew tap homebrew/binary
 
 formulae=(
-  caskroom/cask/brew-cask
   bash-completion
+  caskroom/cask/brew-cask
   cloc
   coreutils
   docker
   docker-compose
   dos2unix
+  fpp
+  fzf
   git
   heroku
   heroku-toolbelt
@@ -32,7 +34,6 @@ formulae=(
   tmux
   tree
   wget
-  fpp
 )
 
 casks=(
@@ -43,7 +44,7 @@ casks=(
   skype
   slack
   spectacle
-  #sublime-text3
+  sublime-text3
   teamviewer
   virtualbox
   vlc
