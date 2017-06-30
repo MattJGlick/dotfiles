@@ -20,14 +20,14 @@ Plug 'yggdroot/indentline'
 Plug 'mkitt/tabline.vim'
 " Git from within vim
 Plug 'tpope/vim-fugitive'
-" autocomplete 
+" autocomplete
 Plug 'dhalter/jedi-vim'
 "vim abolish
 Plug 'tpope/vim-abolish'
 " quick comment out
 Plug 'tpope/vim-commentary'
 " pep8
-Plug 'vim-flake8'
+" Plug 'vim-flake8'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -57,7 +57,8 @@ nnoremap <Leader>w :w<CR>
 " Quit Files
 nnoremap <Leader>q :q<CR>
 " copy to clipboard
-vmap <Leader>y "+y
+vnoremap <C-c> :w !pbcopy<CR><CR>
+noremap <C-v> :r !pbpaste<CR><CR>
 " refresh source
 nmap <Leader>s :source $MYVIMRC<CR>
 " turn off search highlight
@@ -189,7 +190,7 @@ set nospell
 autocmd BufWritePost *.py call Flake8()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" ABBREVIATIONS 
+" ABBREVIATIONS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 iabbrev retreive retrieve
 iabbrev teh the
@@ -227,3 +228,5 @@ set history=1000
 
 " protect against vuln
 set nomodeline
+
+set clipboard=unnamed
