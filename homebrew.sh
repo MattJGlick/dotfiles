@@ -30,6 +30,7 @@ formulae=(
   phantomjs
   pyenv-virtualenvwrapper
   python
+  ranger
   slackcat
   tmux
   tree
