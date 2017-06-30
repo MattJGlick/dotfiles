@@ -5,7 +5,7 @@
 ############################
 
 ######## HomeBrew Installation
-# source homebrew.sh
+source homebrew.sh
 
 ########## Variables
 files="bashrc bash_profile vimrc gitconfig tmux.conf"    # list of files/folders to symlink in homedir
@@ -27,5 +27,13 @@ for file in $files; do
 done
 
 git remote set-url origin git@github.com:MattJGlick/dotfiles.git
+
+# prompt user for work envirn
+echo "What should the work dir be?"
+read work_dir
+
+# make dirs for working
+mkdir -p ~/personal
+mkdir -p ~/$work_dir
 
 source settings
