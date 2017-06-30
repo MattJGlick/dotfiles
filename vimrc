@@ -57,7 +57,7 @@ nnoremap <Leader>w :w<CR>
 " Quit Files
 nnoremap <Leader>q :q<CR>
 " copy to clipboard
-vnoremap <C-c> :w !pbcopy<CR><CR>
+vnoremap <C-c> "*y<CR><CR>
 noremap <C-v> :r !pbpaste<CR><CR>
 " refresh source
 nmap <Leader>s :source $MYVIMRC<CR>
