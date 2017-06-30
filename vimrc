@@ -16,8 +16,6 @@ Plug 'bling/vim-airline'
 Plug 'mustache/vim-mustache-handlebars'
 " show the indentation
 Plug 'yggdroot/indentline'
-" Show the git status in the side panel
-Plug 'vim-gitgutter'
 " Show the tab number for the files
 Plug 'mkitt/tabline.vim'
 " Git from within vim

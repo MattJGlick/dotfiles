@@ -5,18 +5,17 @@
 ############################
 
 ######## HomeBrew Installation
-source homebrew.sh
-source settings
+# source homebrew.sh
 
 ########## Variables
-files="bashrc vimrc gitconfig tmux.conf"    # list of files/folders to symlink in homedir
+files="bashrc bash_profile vimrc gitconfig tmux.conf"    # list of files/folders to symlink in homedir
 
 # make directories for vim
-mkdir ~/.vim
-mkdir ~/.vim/backup
-mkdir ~/.vim/swap
-mkdir ~/.vim/undo
-mkdir ~/.vim/autoload
+mkdir -p ~/.vim
+mkdir -p ~/.vim/backup
+mkdir -p ~/.vim/swap
+mkdir -p ~/.vim/undo
+mkdir -p ~/.vim/autoload
 
 # install plugged
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -24,8 +23,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 # create symlinks
 for file in $files; do
     echo "Creating symlink to $file in home directory."
-    ln -s ~/dotfiles/$file ~/.$file
+    ln -sf ~/dotfiles/$file ~/.$file
 done
 
 git remote set-url origin git@github.com:MattJGlick/dotfiles.git
-source ~/.bashrc
+
+source settings

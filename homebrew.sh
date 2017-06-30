@@ -44,7 +44,7 @@ casks=(
   skype
   slack
   spectacle
-  sublime-text3
+  sublime-text
   teamviewer
   virtualbox
   vlc
