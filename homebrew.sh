@@ -33,6 +33,7 @@ formulae=(
   ranger
   slackcat
   tmux
+  the_silver_searcher
   tree
   wget
 )
