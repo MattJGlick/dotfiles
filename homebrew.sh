@@ -31,9 +31,10 @@ formulae=(
   pyenv-virtualenvwrapper
   python
   ranger
+  reattach-to-user-namespace
   slackcat
-  tmux
   the_silver_searcher
+  tmux
   tree
   wget
 )
