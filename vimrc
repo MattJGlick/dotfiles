@@ -187,7 +187,7 @@ set spl=en spell
 set nospell
 
 " run linter on write
-autocmd BufWritePost *.py call Flake8()
+" autocmd BufWritePost *.py call Flake8()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ABBREVIATIONS
