@@ -1,0 +1,20 @@
+- right click to bottom right corner
+- Remove shit from dock
+- Launch spectacle at login
+- terminal
+    - send “tmux” at start of iterm session
+    - Silence bell in iterm
+    - Install: https://github.com/powerline/fonts
+        - Use “profont for powerline” as non-ascii font
+- Keyboard
+    - Key repeat - fast
+    - delay until repeat - short
+    - Make caps lock -> control
+- Taskbar
+    - Show battery percentage
+    - Date time - show date and seconds 
+    - Show volume
+- Dock
+    - Change size of dock
+    - Hide when not hovered
+
