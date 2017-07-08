@@ -28,6 +28,8 @@ Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 " pep8
 " Plug 'vim-flake8'
+" typescript formatting
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
