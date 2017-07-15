@@ -92,43 +92,44 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $workspace1 "1: Terminals"
-set $workspace2 "2: Work"
-set $workspace3 "3: Slack"
-set $workspace4 "4: Personal"
-set $workspace5 "5: - "
-set $workspace6 "6: - "
-set $workspace7 "7: - "
-set $workspace8 "8: - "
-set $workspace9 "9 - "
-set $workspace10 "10: Music"
+set $ws1 "1: Terminals"
+set $ws2 "2: Work"
+set $ws3 "3: Slack"
+set $ws4 "4: Personal"
+set $ws5 "5: - "
+set $ws6 "6: - "
+set $ws7 "7: - "
+set $ws8 "8: - "
+set $ws9 "9 - "
+set $ws10 "10: Music"
 
 
 # switch to workspace
-bindsym $mod+1 workspace $workspace1
-bindsym $mod+2 workspace $workspace2
-bindsym $mod+3 workspace $workspace3
-bindsym $mod+4 workspace $workspace4
-bindsym $mod+5 workspace $workspace5
-bindsym $mod+6 workspace $workspace6
-bindsym $mod+7 workspace $workspace7
-bindsym $mod+8 workspace $workspace8
-bindsym $mod+9 workspace $workspace9
-bindsym $mod+0 workspace $workspace10
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $workspace1
-bindsym $mod+Shift+2 move container to workspace $workspace2
-bindsym $mod+Shift+3 move container to workspace $workspace3
-bindsym $mod+Shift+4 move container to workspace $workspace4
-bindsym $mod+Shift+5 move container to workspace $workspace5
-bindsym $mod+Shift+6 move container to workspace $workspace6
-bindsym $mod+Shift+7 move container to workspace $workspace7
-bindsym $mod+Shift+8 move container to workspace $workspace8
-bindsym $mod+Shift+9 move container to workspace $workspace9
-bindsym $mod+Shift+0 move container to workspace $workspace10
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
 
-assign [class="Slack"] $workspace3
+assign [class="Slack"] $ws3
+assign [class="Google Play Music Desktop Player"] $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -161,9 +162,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# wallpaper
-exec_always feh --bg-scale /home/glick/Pictures/wallpaper.jpg
-
 set $bg-color 	         #2f343f
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
@@ -177,6 +175,16 @@ client.focused          $bg-color           $bg-color          $text-color      
 client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color $indicator_color
 client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color $indicator_color
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $indicator_color
+
+# audio
+bindsym XF86AudioRaiseVolume exec amixer -q -c 0 sset Master 1dB+
+bindsym XF86AudioLowerVolume exec amixer -q -c 0 sset Master 1dB-
+bindsym XF86AudioMute exec amixer -q -c 0 sset Master toggle
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -192,3 +200,4 @@ bar {
 }
 
 exec_always feh --bg-scale /home/glick/Pictures/wallpaper.jpg
+exec_always compton --config /home/glick/.config/compton/config

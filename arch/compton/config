@@ -1,1 +1,1 @@
-/home/glick/personal/dotfiles/arch/compton/config
+opacity-rule = ["85:class_g = 'Termite'"];
