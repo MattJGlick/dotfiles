@@ -1,1 +1,1 @@
-opacity-rule = ["85:class_g = 'Termite'"];
+opacity-rule = ["85:class_g = 'Termite'", "75:class_g = 'Google Play Music Desktop Player'"];
