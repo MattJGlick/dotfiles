@@ -136,6 +136,8 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
+new_window 1pixel
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -201,3 +203,5 @@ bar {
 
 exec_always feh --bg-scale /home/glick/Pictures/wallpaper.jpg
 exec_always compton --config /home/glick/.config/compton/config
+exec_always --no-startup-id i3-msg 'workspace '$ws3'; exec slack'
+exec_always --no-startup-id i3-msg 'workspace '$ws10'; exec gpmdp'
