@@ -22,6 +22,7 @@ export PROJECT_HOME=~/syapse
 alias gti="git"
 alias la="ls -la"
 alias burp="brew update && brew upgrade"
+alias ragner=ranger
 
 # Find a file with a pattern in name:
 function ff() { find . -type f -iname '*'"$*"'*' -ls ; }
