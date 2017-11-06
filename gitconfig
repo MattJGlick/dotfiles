@@ -17,7 +17,10 @@
 [user]
 	name = Matt Glick
 	email = mattg@syapse.com
+	signingkey = F958C04DE2C60956
 [push]
 	default = current
 [pull]
 	rebase = true
+[commit]
+	gpgsign = True
