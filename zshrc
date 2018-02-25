@@ -1,16 +1,6 @@
-[[ $- = *i* ]] || return
-
-#add git branch to prompt
-parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
-export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
-
-#autocomplete git branches
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-   . `brew --prefix`/etc/bash_completion
-fi
+# load antigen
+source /usr/local/share/antigen/antigen.zsh
+antigen init ~/.antigenrc
 
 # virtualenv
 export WORKON_HOME=~/virtualenvs
@@ -33,6 +23,3 @@ fbr() {
     branch=$(echo "$branches" | fzf +s +m -e) &&
     git checkout $(echo "$branch" | sed "s:.* remotes/origin/::" | sed "s:.* ::")
 }
-
-export GPG_AGENT_INFO="~/.gnupg/S.gpg-agent:$(pgrep gpg-agent):1"
-eval $(keychain --eval --quiet --agents gpg,ssh id_rsa F958C04DE2C60956)

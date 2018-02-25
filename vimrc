@@ -14,22 +14,14 @@ Plug 'myusuf3/numbers.vim'
 Plug 'bling/vim-airline'
 " mustache plugin
 Plug 'mustache/vim-mustache-handlebars'
-" show the indentation
-Plug 'yggdroot/indentline'
 " Show the tab number for the files
 Plug 'mkitt/tabline.vim'
 " Git from within vim
 Plug 'tpope/vim-fugitive'
-" autocomplete
-Plug 'dhalter/jedi-vim'
 "vim abolish
 Plug 'tpope/vim-abolish'
-" quick comment out
-Plug 'tpope/vim-commentary'
-" pep8
-" Plug 'vim-flake8'
-" typescript formatting
-Plug 'leafgarland/typescript-vim'
+" Ale
+Plug 'w0rp/ale'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -58,9 +50,6 @@ nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>w :w<CR>
 " Quit Files
 nnoremap <Leader>q :q<CR>
-" copy to clipboard
-vnoremap <C-c> "*y<CR><CR>
-noremap <C-v> :r !pbpaste<CR><CR>
 " refresh source
 nmap <Leader>s :source $MYVIMRC<CR>
 " turn off search highlight
@@ -128,8 +117,6 @@ nnoremap <leader>b oimport pdb; pdb.set_trace()  # noqa<esc>
 let maplocalleader = "\\"
 autocmd FileType javascript nnoremap <buffer> <localleader>m I//<esc>
 autocmd FileType python     nnoremap <buffer> <localleader>m I#<esc>
-autocmd FileType markdown setlocal spell
-autocmd FileType text setlocal spell
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VISUALS
@@ -165,7 +152,7 @@ set splitbelow
 set splitright
 
 " set column color
-set colorcolumn=100
+set colorcolumn=120
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " FORMATTING
@@ -185,11 +172,6 @@ au BufRead,BufNewFile *.dataview setf handlebars
 syntax on
 
 " Use english for spellchecking
-set spl=en spell
-set nospell
-
-" run linter on write
-" autocmd BufWritePost *.py call Flake8()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ABBREVIATIONS
@@ -199,6 +181,7 @@ iabbrev teh the
 iabbrev nad and
 iabbrev chromsome chromosome
 iabbrev Chromsome Chromosome
+iabbrev ensemble ensembl
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SEARCH
@@ -232,3 +215,5 @@ set history=1000
 set nomodeline
 
 set clipboard=unnamed
+
+set backspace=indent,eol,start

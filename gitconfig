@@ -5,6 +5,7 @@
     cob = checkout -b
     cop = checkout -
     cot = checkout --theirs
+    cp = cherry-pick
     st = status
     rb = rebase
     rbi = rebase -i
@@ -14,6 +15,7 @@
     push = push --tags
 [core]
 	excludesfile = /Users/glick/.config/git/ignore
+	editor = /usr/local/bin/vim
 [user]
 	name = Matt Glick
 	email = mattg@syapse.com
@@ -21,6 +23,8 @@
 [push]
 	default = current
 [pull]
-	rebase = true
+	rebase = True
 [commit]
 	gpgsign = True
+[tag]
+	forcesignannotated = True

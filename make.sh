@@ -8,7 +8,7 @@
 source homebrew.sh
 
 ########## Variables
-files="bashrc bash_profile vimrc gitconfig tmux.conf"    # list of files/folders to symlink in homedir
+files="bashrc bash_profile vimrc gitconfig tmux.conf zshrc antigenrc"    # list of files/folders to symlink in homedir
 
 # make directories for vim
 mkdir -p ~/.vim
