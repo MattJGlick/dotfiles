@@ -24,3 +24,6 @@ fbr() {
     branch=$(echo "$branches" | fzf +s +m -e) &&
     git checkout $(echo "$branch" | sed "s:.* remotes/origin/::" | sed "s:.* ::")
 }
+
+export GPG_AGENT_INFO="~/.gnupg/S.gpg-agent:$(pgrep gpg-agent):1"
+eval $(keychain --eval --quiet --agents gpg,ssh id_rsa F958C04DE2C60956)
