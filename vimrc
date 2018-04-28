@@ -22,6 +22,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-abolish'
 " Ale
 Plug 'w0rp/ale'
+" helm syntax
+Plug 'towolf/vim-helm'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -38,6 +40,9 @@ let g:indentLine_color_term = 239
 
 " NERDTree Ignore
 let NERDTreeIgnore = ['\.pyc$', '^__pycache__$']
+
+" NERDTree show hidden files
+let NERDTreeShowHidden = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " REMAPPING

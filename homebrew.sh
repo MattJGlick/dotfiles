@@ -21,8 +21,12 @@ formulae=(
   fpp
   fzf
   git
+  helm
   heroku
   heroku-toolbelt
+  kubectl
+  kubectx
+  kops
   macvim
   mysql
   node
