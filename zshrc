@@ -5,6 +5,7 @@ antigen init ~/.antigenrc
 # virtualenv
 export WORKON_HOME=~/virtualenvs
 export PROJECT_HOME=~/syapse
+source /usr/local/bin/virtualenvwrapper.sh
 
 # aliases
 # because keyboards are hadr
