@@ -6,13 +6,14 @@
     cop = checkout -
     cot = checkout --theirs
     cp = cherry-pick
-    st = status
-    rb = rebase
-    rbi = rebase -i
-    rbc = rebase --continue
     pf = push --force-with-lease
     puhs = push
     push = push --tags
+    rb = rebase
+    rbc = rebase --continue
+    rbi = rebase -i
+    st = status
+    staged = diff --cached
 [core]
 	excludesfile = /Users/glick/.config/git/ignore
 	editor = /usr/local/bin/vim
@@ -28,3 +29,5 @@
 	gpgsign = True
 [tag]
 	forcesignannotated = True
+[diff "sopsdiffer"]
+	textconv = sops -d
