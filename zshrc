@@ -14,6 +14,7 @@ alias la="ls -la"
 alias burp="brew update && brew upgrade"
 alias ragner=ranger
 alias dc=docker-compose
+# alias "dc restart"="dc stop && dc start"
 
 # Find a file with a pattern in name:
 function ff() { find . -type f -iname '*'"$*"'*' -ls ; }
