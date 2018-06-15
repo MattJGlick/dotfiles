@@ -184,6 +184,8 @@ au BufRead,BufNewFile *.dataview setf handlebars
 syntax on
 
 " Use english for spellchecking
+set spelllang=en
+autocmd FileType markdown setlocal spell
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ABBREVIATIONS
