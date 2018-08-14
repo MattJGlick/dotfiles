@@ -13,7 +13,7 @@ quotes = [
     "You couldn't handle my undivided attention. -DS",
     "Fact. Bears eat beets. Bears. Beets. Battlestar Galactica. -JH",
     "You don't call retarded people retards. It's bad taste. You call your friends retards when they're acting retarded. -MS",
-    "Oh my goodness, you sound sexy. Oh, thank you. Woah woah woah! Pam! Pam! You are not talking to Dwight right now. You are talking to Jim. -PH,JHbDS",
+    "Oh my goodness, you sound sexy. Oh, thank you. Woah woah woah! Pam! Pam! You are not talking to Dwight right now. You are talking to Jim. -PH,JH,DS",
     "Toby is in HR, so he's really not a part of our family. Also, he's divorced, so he's really not a part of his family. -MS",
     "One day Michael came in, complaining about a speed bump, on the highway... I wonder who he ran over then. -JH",
     "When I asked, 'what if you die, Dwight? How will we get into the office?' He said, 'if I'm dead, you guys have been dead for weeks.' -PH",
