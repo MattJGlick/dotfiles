@@ -21,6 +21,7 @@ alias aws-mfa="aws-mfa --duration 43200"
 # Find a file with a pattern in name:
 function ff() { find . -type f -iname '*'"$*"'*' -ls ; }
 
+# find github branch
 fbr() {
     local branches branch
     branches=$(git branch -a) &&
@@ -28,8 +29,25 @@ fbr() {
     git checkout $(echo "$branch" | sed "s:.* remotes/origin/::" | sed "s:.* ::")
 }
 
+# handle gpg
 export GPG_AGENT_INFO="~/.gnupg/S.gpg-agent:$(pgrep gpg-agent):1"
 eval $(keychain --eval --quiet --agents gpg,ssh id_rsa F958C04DE2C60956)
+
+# scorch earth helm deploy
+nuke-helm-install() {
+  local target=$1
+  namespace=$(helm list -a | grep $target | tr -s '[:blank:]' ' ' | cut -f10 -d' ')
+  echo "Nuking $target from namespace $namespace"
+  helm delete "$target" || true
+  kubectl delete all -n "$namespace" -lrelease=$target
+  kubectl delete statefulsets -n "$namespace" -lrelease=$target
+  helm delete --purge "$target" || true
+}
+
+# login to ECR
+ecr(){
+    eval "$(aws ecr get-login --no-include-email)"
+}
 
 ### SPACESHIP CONFIG
 # ORDER
