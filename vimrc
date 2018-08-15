@@ -42,6 +42,9 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
 
+" ctrlp show hidden files
+let g:ctrlp_show_hidden = 1
+
 " indent color changes
 let g:indentLine_color_term = 239
 
