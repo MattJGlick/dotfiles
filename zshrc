@@ -5,7 +5,15 @@ antigen init ~/.antigenrc
 # virtualenv
 export WORKON_HOME=~/virtualenvs
 export PROJECT_HOME=~/syapse
-source /usr/local/bin/virtualenvwrapper.sh
+
+. virtualenvwrapper.sh
+[[ $PROJECT_HOME != ${WORKON_HOME}* && $WORKON_HOME != ${PROJECT_HOME}* ]] ||
+  echo 'Invalid virtualenvwrapper configuration' >&2
+
+trap_exit() {
+  . "$HOME/.bash_logout"
+}
+trap trap_exit EXIT
 
 # aliases
 # because keyboards are hadr
@@ -17,6 +25,7 @@ alias dc=docker-compose
 alias k=kubectl
 alias ag="ag --hidden"
 alias aws-mfa="aws-mfa --duration 43200"
+alias pypy=pypy3
 
 # Find a file with a pattern in name:
 function ff() { find . -type f -iname '*'"$*"'*' -ls ; }
