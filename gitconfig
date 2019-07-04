@@ -3,9 +3,11 @@
     cm = commit -m 
     co = checkout
     cob = checkout -b
+    com = checkout master
     cop = checkout -
     cot = checkout --theirs
     cp = cherry-pick
+    fa = fetch --all
     pf = push --force-with-lease
     puhs = push
     push = push --tags
