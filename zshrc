@@ -1,5 +1,6 @@
 # load antigen
 source /usr/local/share/antigen/antigen.zsh
+source ~/.package_cloud
 antigen init ~/.antigenrc
 
 # virtualenv

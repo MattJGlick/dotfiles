@@ -31,6 +31,8 @@ Plug 'tpope/vim-abolish'
 Plug 'w0rp/ale'
 " helm syntax
 Plug 'towolf/vim-helm'
+" typescript
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -45,6 +47,9 @@ let g:ctrlp_prompt_mappings = {
 " ctrlp show hidden files
 let g:ctrlp_show_hidden = 1
 
+" ctrlp ignore nodemodules
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
 " indent color changes
 let g:indentLine_color_term = 239
 
@@ -53,6 +58,11 @@ let NERDTreeIgnore = ['\.pyc$', '^__pycache__$']
 
 " NERDTree show hidden files
 let NERDTreeShowHidden = 1
+
+augroup SyntaxSettings
+    autocmd!
+    autocmd BufNewFile,BufRead *.tsx set filetype=typescript
+augroup END
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " REMAPPING

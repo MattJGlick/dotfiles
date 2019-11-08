@@ -24,6 +24,7 @@ formulae=(
   helm
   heroku
   heroku-toolbelt
+  hub
   kubectl
   kubectx
   kops

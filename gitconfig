@@ -14,6 +14,7 @@
     rb = rebase
     rbc = rebase --continue
     rbi = rebase -i
+    rh = reset --hard
     st = status
     staged = diff --cached
 [core]
