@@ -4,6 +4,7 @@
     co = checkout
     cob = checkout -b
     com = checkout master
+    comp = !git checkout master && git pull
     cop = checkout -
     cot = checkout --theirs
     cp = cherry-pick
@@ -11,10 +12,12 @@
     pf = push --force-with-lease
     puhs = push
     push = push --tags
+    pr = !git push && git set-upstream && hub pull-request --no-edit
     rb = rebase
     rbc = rebase --continue
     rbi = rebase -i
     rh = reset --hard
+    set-upstream = !cb=$(git rev-parse --abbrev-ref HEAD) && git branch --set-upstream-to=origin/$cb $cb
     st = status
     staged = diff --cached
 [core]

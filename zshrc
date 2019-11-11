@@ -59,6 +59,11 @@ ecr(){
     eval "$(aws ecr get-login --no-include-email)"
 }
 
+# go to top of repo
+gtop () {
+    cd "$(git rev-parse --show-toplevel)" || true
+}
+
 ### SPACESHIP CONFIG
 # ORDER
 SPACESHIP_PROMPT_ORDER=(
