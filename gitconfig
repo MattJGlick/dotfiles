@@ -12,8 +12,10 @@
     pf = push --force-with-lease
     puhs = push
     push = push --tags
-    pr = !git push && git set-upstream && hub pull-request --no-edit
+    pr = !git push && git set-upstream && open "$(hub pull-request --no-edit)"
+    prd = !git push && git set-upstream && open "$(hub pull-request --draft --no-edit)"
     rb = rebase
+    rbm = !git comp && git co - && git rebase origin/master
     rbc = rebase --continue
     rbi = rebase -i
     rh = reset --hard
