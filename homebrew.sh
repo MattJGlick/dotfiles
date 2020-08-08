@@ -53,7 +53,6 @@ casks=(
   slack
   spectacle
   sublime-text
-  teamviewer
   virtualbox
   vlc
 )
